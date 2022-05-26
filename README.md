@@ -52,12 +52,9 @@
 
 ## About
 
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions -- just the ones relevant to your project.
+> This is a continuation of the data analysis project using L.A. city's data 'Great Streets > > > Pedestrian Survey 2015'.  
+> The data shown is already data wrangled and cleaned which is described on my other repo.
+> This project is to demonstrate how to use google maps API to get geo coordinates from cross streets.
 
 <details>
 <summary>Screenshots</summary>
@@ -74,26 +71,37 @@
 
 ### Built With
 
-> **[?]**
-> Please provide the technologies that are used in the project.
+* Plotly
 
 ## Getting Started
 
 ### Prerequisites
 
-> **[?]**
-> What are the project requirements/dependencies?
+* pip install plotly
 
 ### Installation
 
-> **[?]**
-> Describe how to install and get started with the project.
+* Easier to use pandas and numpy to manipulate data for charts.
 
 ## Usage
 
-> **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+```python
+import plotly.express as px
+pie_fig = px.pie(...)
+
+pie_fig.update_layout(...)
+
+
+```
+Creating Chart extracted from a single string question from column 2
+```python
+chart_data = df.loc[:, new_cols].sum()
+chart_data_df = pd.DataFrame({"Pedestrians": chart_data})
+chart_data_sorted_df = pd.DataFrame()
+chart_data_sorted_df = chart_data_df.sort_values(by=['Pedestrians'])
+chart_data_sorted_df
+```
+
 
 ## Roadmap
 
@@ -105,8 +113,7 @@ See the [open issues](https://github.com/ykimdeveloper/charts-great-streets-surv
 
 ## Support
 
-> **[?]**
-> Provide additional ways to contact the project maintainer/maintainers.
+* ykimdeveloper - message me for any questions
 
 Reach out to the maintainer at one of the following places:
 
@@ -148,9 +155,3 @@ _For more information and to report security issues, please refer to our [securi
 This project is licensed under the **MIT license**.
 
 See [LICENSE](LICENSE) for more information.
-
-## Acknowledgements
-
-> **[?]**
-> If your work was funded by any organization or institution, acknowledge their support here.
-> In addition, if your work relies on other software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.
