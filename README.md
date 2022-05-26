@@ -52,26 +52,25 @@
 
 ## About
 
-> This is a continuation of the data analysis project using L.A. city's data 'Great Streets > > > Pedestrian Survey 2015'.  
-> The data shown is already data wrangled and cleaned which is described on my other repo.
-> This project is to demonstrate how to use google maps API to get geo coordinates from cross streets.
+This is a continuation of the data analysis project using L.A. city's data 'Great Streets Pedestrian Survey 2015'.  
+The data shown is already data wrangled and cleaned which is described on my other repo.
+This project is to demonstrate how to use charts to unnderstand the data better.
 
 <details>
 <summary>Screenshots</summary>
 <br>
 
-> **[?]**
-> Please provide your screenshots here.
 
-|                               Home Page                               |                               Login Page                               |
+
+|                              421 Pedestrian Bar Graph                          |   421 Pedestrian  Pie Graph Page                               |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+| <img src="docs/images/bar-graph.png" title="Home Page" width="100%"> | <img src="docs/images/pie-graphy.png" title="Login Page" width="100%"> |
 
 </details>
 
 ### Built With
 
-* Plotly
+* Plotly - a python browser-based graphing library
 
 ## Getting Started
 
